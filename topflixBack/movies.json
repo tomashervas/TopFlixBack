@@ -1,0 +1,119 @@
+[
+  {
+    "idTMDB": 724209,
+    "name": "Agente Stone ",
+    "title": "Agente Stone",
+    "overview": "Rachel Stone es una agente de inteligencia, la única mujer que se interpone entre su poderosa organización mundial de mantenimiento de la paz y la pérdida de su activo más valioso y peligroso.",
+    "videoUrl": "http://localhost:3435/movies/Agente Stone (2023).mp4",
+    "thumbnailUrl": "https://image.tmdb.org/t/p/w500/pfrBdyalwwSEVrqDX8FXLtpwSLE.jpg",
+    "genres": [
+      "Suspense",
+      "Acción"
+    ],
+    "release_date": "2023-08-09",
+    "vote_average": 6.906,
+    "duration": 0,
+    "rate": "NR"
+  },
+  {
+    "idTMDB": 848685,
+    "name": "As bestas",
+    "title": "As bestas",
+    "overview": "Una pareja francesa de mediana edad, Antoine y Olga, llega a vivir a un pueblo gallego en busca de una mayor cercanía con la naturaleza. Su presencia, sin embargo, enciende a dos lugareños, los hermanos Xan y Lorenzo, hasta el punto de una abierta hostilidad y luego una violencia impactante.",
+    "videoUrl": "http://localhost:3435/movies/As bestas.mp4",
+    "thumbnailUrl": "https://image.tmdb.org/t/p/w500/d5Vv89re9tBtukMUnktyseam0g7.jpg",
+    "genres": [
+      "Suspense",
+      "Drama"
+    ],
+    "release_date": "2022-07-20",
+    "vote_average": 7.5,
+    "duration": 0,
+    "rate": "NR"
+  },
+  {
+    "idTMDB": 776503,
+    "name": "CODA ",
+    "title": "CODA: Los sonidos del silencio",
+    "overview": "Ruby es el único miembro con audición de una familia de sordos. A sus 17 años, trabaja por la mañana con sus padres y su hermano en Gloucester, Massachusetts, antes de ir a clase, tratando de mantener a flote su negocio pesquero. Ávida de encontrar nuevas aficiones, Ruby decide probar suerte en el coro de su instituto, donde no sólo descubre una latente pasión por el canto, sino también una fuerte atracción física por la persona con la que realiza duetos. Su entusiasta profesor ve algo especial en ella y la anima a que piense en la posibilidad de entrar en la escuela de música, algo que la obligaría a tener que tomar una decisión de cara a su futuro: o sus estudios, o su familia.",
+    "videoUrl": "http://localhost:3435/movies/CODA (2021) [BluRay Rip][AC3 5.1 Castellano][www.atomixHQ.one].mp4",
+    "thumbnailUrl": "https://image.tmdb.org/t/p/w500/sSkEkCxsEs9LuHZzA2IZYyvd9x4.jpg",
+    "genres": [
+      "Drama",
+      "Música",
+      "Romance"
+    ],
+    "release_date": "2021-08-11",
+    "vote_average": 7.966,
+    "duration": 0,
+    "rate": "NR"
+  },
+  {
+    "idTMDB": 601,
+    "name": "E T   El extraterrestre",
+    "title": "E.T. el extraterrestre",
+    "overview": "Un pequeño ser de otro planeta se queda abandonado en la Tierra cuando su nave se marcha olvidándose de él. Tiene miedo. Está completamente solo, pero se hará amigo de un niño, que lo esconde en su casa. El niño y sus hermanos intentarán encontrar la forma de que el pequeño extraterrestre regrese a su planeta antes de que los científicos y la policía lo encuentren.",
+    "videoUrl": "http://localhost:3435/movies/E.T.  El extraterrestre.mp4",
+    "thumbnailUrl": "https://image.tmdb.org/t/p/w500/lVUsjKHXPvLTNpFBABnrPzhx5Dc.jpg",
+    "genres": [
+      "Ciencia ficción",
+      "Aventura",
+      "Familia",
+      "Fantasía"
+    ],
+    "release_date": "1982-06-11",
+    "vote_average": 7.512,
+    "duration": 0,
+    "rate": "NR"
+  },
+  {
+    "idTMDB": 4347,
+    "name": "Expiacion Mas Alla De La Pasion ",
+    "title": "Expiación, más allá de la pasión",
+    "overview": "En el verano de 1935, Briony Tallis (Saoirse Ronan), una precoz escritora de 13 años, cambia irremediablemente el curso de varias vidas cuando acusa al amante de su hermana Cecilia (Keira Knightley), el joven Robbie Turner (James McAvoy), de haber cometido un crimen. Los productores y el realizador de \"Orgullo y prejuicio\" vuelven a unirse en este drama.",
+    "videoUrl": "http://localhost:3435/movies/Expiacion Mas Alla De La Pasion (Spanish DVDRip).mp4",
+    "thumbnailUrl": "https://image.tmdb.org/t/p/w500/lGzQYPmmdBZDiIqhhnB7NdZmB2q.jpg",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "release_date": "2007-09-07",
+    "vote_average": 7.648,
+    "duration": 0,
+    "rate": "NR"
+  },
+  {
+    "idTMDB": 117,
+    "name": "Los Intocables de Eliot Ness",
+    "title": "Los intocables de Eliot Ness",
+    "overview": "El joven agente del tesoro Elliot Ness llega a Chicago con la determinación de detener a Al Capone. No va a ser tarea fácil, puesto que Capone tiene a la policía en el bolsillo. Ness conoce a Jimmy Malone, un guardia veterano y probablemente el más honrado de todo el cuerpo, al que Ness pide ayuda en su cruzada contra Capone.",
+    "videoUrl": "http://localhost:3435/movies/Los Intocables de Eliot Ness.mp4",
+    "thumbnailUrl": "https://image.tmdb.org/t/p/w500/pVcWaUbFDL76ObIsReIBQ5ILMHv.jpg",
+    "genres": [
+      "Crimen",
+      "Drama",
+      "Historia",
+      "Suspense"
+    ],
+    "release_date": "1987-06-03",
+    "vote_average": 7.768,
+    "duration": 0,
+    "rate": "NR"
+  },
+  {
+    "idTMDB": 773,
+    "name": "Pequeña Miss Sunshine",
+    "title": "Pequeña Miss Sunshine",
+    "overview": "Los Hoover son una familia conflictiva: el abuelo esnifa cocaína y suelta palabrotas, el padre da cursos sobre el éxito con estrepitoso fracaso, la madre no da abasto, el tío se recupera de un suicidio frustrado al ser abandonado por su novio, el hijo adolescente lee a Nietzsche y se niega a hablar, y la hija pequeña, Olive, gafotas y ligeramente gordinflona, quiere ser una belleza. Cuando un golpe de suerte lleva a Olive a ser invitada a participar en el muy competitivo concurso de 'Pequeña Miss Sunshine' en California, toda la familia Hoover se reúne para ir con ella. Se apilan en su oxidada furgoneta Volkswagen y se dirigen hacia el Oeste en un trágicómico periplo de tres días lleno de locas sorpresas que les lleva al gran debut de Olive, el cual cambiará a esta familia de inadaptados de una forma que nunca hubieran imaginado.",
+    "videoUrl": "http://localhost:3435/movies/Pequeña.Miss.Sunshine.mp4",
+    "thumbnailUrl": "https://image.tmdb.org/t/p/w500/vGuIFlvqX6R3zvR4c05uId6fj5i.jpg",
+    "genres": [
+      "Comedia",
+      "Drama"
+    ],
+    "release_date": "2006-07-26",
+    "vote_average": 7.678,
+    "duration": 0,
+    "rate": "NR"
+  }
+]

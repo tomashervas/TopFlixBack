@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Player</title>
+</head>
+<body>
+  <video id="videoPlayer" controls width="800" autoplay></video>
+
+  <script>
+    const videoPlayer = document.getElementById('videoPlayer');
+
+    // Ruta del video que deseas reproducir
+    const videoUrl = 'http://192.168.0.19:3435/movies/Los Intocables de Eliot Ness.mp4';
+
+    videoPlayer.src = videoUrl;
+    videoPlayer.load();
+
+    // videoPlayer.play()
+
+  </script>
+</body>
+</html>
