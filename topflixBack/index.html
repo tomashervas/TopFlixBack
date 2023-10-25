@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video Player</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
 </head>
+
 <body>
-  <video id="videoPlayer" controls width="800" autoplay></video>
+    <video id="videoPlayer" controls width="100%" autoplay></video>
 
-  <script>
-    const videoPlayer = document.getElementById('videoPlayer');
+    <script>
+        const videoPlayer = document.getElementById('videoPlayer');
+        const videoUrl = 'http://192.168.0.19:3435/movies/Campeones s01e001 [Chute_Hacia_El_Gran_Cielo].mp4';
+        videoPlayer.src = videoUrl;
+        const storageKey = 'videoLastPosition';
+        const storedPosition = localStorage.getItem(storageKey);
+        let currentTime = 0;
 
-    // Ruta del video que deseas reproducir
-    const videoUrl = 'http://192.168.0.19:3435/movies/Los Intocables de Eliot Ness.mp4';
+        videoPlayer.addEventListener('loadedmetadata', () => {
+            if (storedPosition) {
+                videoPlayer.currentTime = parseFloat(storedPosition);
+            } else {
+                currentTime = videoPlayer.currentTime;
+                localStorage.setItem(storageKey, currentTime);
 
-    videoPlayer.src = videoUrl;
-    videoPlayer.load();
+            }
+        });
 
-    // videoPlayer.play()
 
-  </script>
+        videoPlayer.addEventListener('timeupdate', () => {
+            setTimeout(() => { }, 6000)
+            currentTime = videoPlayer.currentTime;
+            localStorage.setItem(storageKey, currentTime);
+        });
+
+
+
+        videoPlayer.load();
+        videoPlayer.play();
+    </script>
 </body>
+
 </html>

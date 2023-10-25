@@ -6,14 +6,115 @@
     "overview": "Rachel Stone es una agente de inteligencia, la única mujer que se interpone entre su poderosa organización mundial de mantenimiento de la paz y la pérdida de su activo más valioso y peligroso.",
     "videoUrl": "http://localhost:3435/movies/Agente Stone (2023).mp4",
     "thumbnailUrl": "https://image.tmdb.org/t/p/w500/pfrBdyalwwSEVrqDX8FXLtpwSLE.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w500/xVMtv55caCEvBaV83DofmuZybmI.jpg",
+    "images": [
+      "https://image.tmdb.org/t/p/w500/pfrBdyalwwSEVrqDX8FXLtpwSLE.jpg",
+      "https://image.tmdb.org/t/p/w500/3iEjVseteIY8YnryTKWgVB91Uil.jpg",
+      "https://image.tmdb.org/t/p/w500/igs08nyaA21oWWA4NT2N2z58HHf.jpg",
+      "https://image.tmdb.org/t/p/w500/oJNjCm4YsSE5lPwsEkUnrOvF089.jpg",
+      "https://image.tmdb.org/t/p/w500/682SlpyatX0HjgjQPOKu0VwpKfl.jpg",
+      "https://image.tmdb.org/t/p/w500/3gXSLmedmJsXsmb4VPyegXYVpxt.jpg",
+      "https://image.tmdb.org/t/p/w500/kcbwDtZpUMTS55iy6vA1p44r9Co.jpg",
+      "https://image.tmdb.org/t/p/w500/hYf0wOO2Cgk5Hgu9ZzcHNFdNYTp.jpg",
+      "https://image.tmdb.org/t/p/w500/8hRLXkyZA5VLjfNkbIBvL9w2pbW.jpg",
+      "https://image.tmdb.org/t/p/w500/sZD82FBu30VDAbwK9Y1etXYNaPl.jpg"
+    ],
+    "director": [
+      "Tom Harper"
+    ],
+    "cast": [
+      {
+        "name": "Gal Gadot",
+        "character": "Rachel Stone"
+      },
+      {
+        "name": "Jamie Dornan",
+        "character": "Parker"
+      },
+      {
+        "name": "Alia Bhatt",
+        "character": "Keya Dhawan"
+      },
+      {
+        "name": "Sophie Okonedo",
+        "character": "Nomad"
+      },
+      {
+        "name": "Matthias Schweighöfer",
+        "character": "Jack of Hearts"
+      },
+      {
+        "name": "Paul Ready",
+        "character": "Bailey"
+      },
+      {
+        "name": "Jing Lusi",
+        "character": "Yang"
+      },
+      {
+        "name": "Enzo Cilenti",
+        "character": "Mulvaney"
+      },
+      {
+        "name": "Joe Reisig",
+        "character": "Lars Monroe"
+      },
+      {
+        "name": "Luca Fiamenghi",
+        "character": "Casanova"
+      },
+      {
+        "name": "Thomas Arnold",
+        "character": "Control"
+      },
+      {
+        "name": "Ruth Keeling",
+        "character": "Sandra"
+      },
+      {
+        "name": "Archie Madekwe",
+        "character": "Ivo"
+      },
+      {
+        "name": "Arya Dolatrai",
+        "character": "Young Keya Dhawan"
+      },
+      {
+        "name": "Neran Persaud",
+        "character": "Niam Kharche"
+      },
+      {
+        "name": "Jon Kortajarena",
+        "character": "The Blond"
+      },
+      {
+        "name": "Giulia Innocenti",
+        "character": "Doctor"
+      },
+      {
+        "name": "Roy Sampson",
+        "character": "Usher"
+      },
+      {
+        "name": "BD Wong",
+        "character": "King of Clubs"
+      },
+      {
+        "name": "Glenn Close",
+        "character": "King of Diamonds"
+      }
+    ],
     "genres": [
       "Suspense",
       "Acción"
     ],
     "release_date": "2023-08-09",
     "vote_average": 6.906,
-    "duration": 0,
-    "rate": "NR"
+    "duration": 124,
+    "content_rating": "12",
+    "budget": 0,
+    "revenue": 0,
+    "tagline": "Desafía las probabilidades."
   },
   {
     "idTMDB": 848685,
@@ -22,14 +123,220 @@
     "overview": "Una pareja francesa de mediana edad, Antoine y Olga, llega a vivir a un pueblo gallego en busca de una mayor cercanía con la naturaleza. Su presencia, sin embargo, enciende a dos lugareños, los hermanos Xan y Lorenzo, hasta el punto de una abierta hostilidad y luego una violencia impactante.",
     "videoUrl": "http://localhost:3435/movies/As bestas.mp4",
     "thumbnailUrl": "https://image.tmdb.org/t/p/w500/d5Vv89re9tBtukMUnktyseam0g7.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w500/o1pjbrQB1SmmSo9FZLUWXZDJ1bP.jpg",
+    "images": [
+      "https://image.tmdb.org/t/p/w500/d5Vv89re9tBtukMUnktyseam0g7.jpg",
+      "https://image.tmdb.org/t/p/w500/dV9kPhRJWsQI38IpjoC4AdAsONt.jpg",
+      "https://image.tmdb.org/t/p/w500/417tB5nBdvB0yawyPJ0mbeDnMXN.jpg",
+      "https://image.tmdb.org/t/p/w500/kuRMLyFZ715FY3a7fyE3QYZorM1.jpg",
+      "https://image.tmdb.org/t/p/w500/AmNNCZB5ck8zQ46WXoiwR7vbwbx.jpg",
+      "https://image.tmdb.org/t/p/w500/yVGxFqXGByKPFAcTITNKXhlea9W.jpg"
+    ],
+    "director": [
+      "Rodrigo Sorogoyen"
+    ],
+    "cast": [
+      {
+        "name": "Marina Foïs",
+        "character": "Olga"
+      },
+      {
+        "name": "Denis Ménochet",
+        "character": "Antoine"
+      },
+      {
+        "name": "Luis Zahera",
+        "character": "Xan"
+      },
+      {
+        "name": "Diego Anido",
+        "character": "Lorenzo"
+      },
+      {
+        "name": "Marie Colomb",
+        "character": "Marie Denis"
+      },
+      {
+        "name": "Machi Salgado",
+        "character": "Rafael"
+      },
+      {
+        "name": "David Menéndez",
+        "character": "Cabo 3 Alfonso"
+      },
+      {
+        "name": "Luisa Merelas",
+        "character": "Madre Anta"
+      },
+      {
+        "name": "José Manuel Fernández y Blanco",
+        "character": "Pepiño"
+      },
+      {
+        "name": "Federico Pérez Rey",
+        "character": "Cabo 1 Mariano"
+      },
+      {
+        "name": "Javier Varela",
+        "character": "Cabo 2 Xosé"
+      },
+      {
+        "name": "Xavier Estévez",
+        "character": "Sergento Espin"
+      },
+      {
+        "name": "Gonzalo García",
+        "character": "Breixo"
+      },
+      {
+        "name": "Pepo Suevos",
+        "character": "Granjero"
+      },
+      {
+        "name": "Emile Duthu",
+        "character": "Pierrot"
+      },
+      {
+        "name": "Luis P. Martínez",
+        "character": "Perri"
+      },
+      {
+        "name": "Melchor López",
+        "character": "Eusebio"
+      },
+      {
+        "name": "José Antonio Fernández",
+        "character": "Paulino"
+      },
+      {
+        "name": "Ramón Porto",
+        "character": "Poli"
+      },
+      {
+        "name": "Poli Suárez",
+        "character": "Miguelito"
+      }
+    ],
     "genres": [
       "Suspense",
       "Drama"
     ],
     "release_date": "2022-07-20",
     "vote_average": 7.5,
-    "duration": 0,
-    "rate": "NR"
+    "duration": 138,
+    "content_rating": "12",
+    "budget": 3900000,
+    "revenue": 10238603,
+    "tagline": ""
+  },
+  {
+    "idTMDB": 747188,
+    "name": "Asteroid City",
+    "title": "Asteroid City",
+    "overview": "En 1955, colegiales y padres de todo el país se reúnen para un concurso escolar dedicado a la observación de fenómenos astronómicos (Junior Stargazer Convention) que se lleva a cabo en una ciudad ficticia del desierto estadounidense llamada Asteroid City. La convención se verá espectacularmente interrumpida por eventos que cambian el mundo.",
+    "videoUrl": "http://localhost:3435/movies/Asteroid City.mp4",
+    "thumbnailUrl": "https://image.tmdb.org/t/p/w500/s7LIE7oNZ6WU4ajf1FaXWyMYdpX.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w500/gcbZ2ZdVzfBsGmfjTy8g7UaZS16.jpg",
+    "images": [
+      "https://image.tmdb.org/t/p/w500/s7LIE7oNZ6WU4ajf1FaXWyMYdpX.jpg",
+      "https://image.tmdb.org/t/p/w500/tVVinzk5ixmjHsxpqlBLfVPvfSq.jpg"
+    ],
+    "director": [
+      "Wes Anderson"
+    ],
+    "cast": [
+      {
+        "name": "Jason Schwartzman",
+        "character": "Augie Steenbeck"
+      },
+      {
+        "name": "Scarlett Johansson",
+        "character": "Midge Campbell"
+      },
+      {
+        "name": "Tom Hanks",
+        "character": "Stanley Zak"
+      },
+      {
+        "name": "Jeffrey Wright",
+        "character": "General Gibson"
+      },
+      {
+        "name": "Tilda Swinton",
+        "character": "Dr. Hickenlooper"
+      },
+      {
+        "name": "Bryan Cranston",
+        "character": "The Host"
+      },
+      {
+        "name": "Edward Norton",
+        "character": "Conrad Earp"
+      },
+      {
+        "name": "Adrien Brody",
+        "character": "Schubert Green"
+      },
+      {
+        "name": "Liev Schreiber",
+        "character": "J.J. Kellogg"
+      },
+      {
+        "name": "Hope Davis",
+        "character": "Sandy Borden"
+      },
+      {
+        "name": "Stephen Park",
+        "character": "Roger Cho"
+      },
+      {
+        "name": "Rupert Friend",
+        "character": "Montana"
+      },
+      {
+        "name": "Maya Hawke",
+        "character": "June Douglas"
+      },
+      {
+        "name": "Steve Carell",
+        "character": "The Motel Manager"
+      },
+      {
+        "name": "Matt Dillon",
+        "character": "The Mechanic"
+      },
+      {
+        "name": "Willem Dafoe",
+        "character": "Saltzburg Keitel"
+      },
+      {
+        "name": "Tony Revolori",
+        "character": "The Aide-de-Camp"
+      },
+      {
+        "name": "Jake Ryan",
+        "character": "Woodrow"
+      },
+      {
+        "name": "Grace Edwards",
+        "character": "Dinah"
+      },
+      {
+        "name": "Aristou Meehan",
+        "character": "Clifford"
+      }
+    ],
+    "genres": [
+      "Comedia",
+      "Drama"
+    ],
+    "release_date": "2023-06-08",
+    "vote_average": 6.635,
+    "duration": 105,
+    "content_rating": "7",
+    "budget": 25000000,
+    "revenue": 47281670,
+    "tagline": ""
   },
   {
     "idTMDB": 776503,
@@ -38,6 +345,106 @@
     "overview": "Ruby es el único miembro con audición de una familia de sordos. A sus 17 años, trabaja por la mañana con sus padres y su hermano en Gloucester, Massachusetts, antes de ir a clase, tratando de mantener a flote su negocio pesquero. Ávida de encontrar nuevas aficiones, Ruby decide probar suerte en el coro de su instituto, donde no sólo descubre una latente pasión por el canto, sino también una fuerte atracción física por la persona con la que realiza duetos. Su entusiasta profesor ve algo especial en ella y la anima a que piense en la posibilidad de entrar en la escuela de música, algo que la obligaría a tener que tomar una decisión de cara a su futuro: o sus estudios, o su familia.",
     "videoUrl": "http://localhost:3435/movies/CODA (2021) [BluRay Rip][AC3 5.1 Castellano][www.atomixHQ.one].mp4",
     "thumbnailUrl": "https://image.tmdb.org/t/p/w500/sSkEkCxsEs9LuHZzA2IZYyvd9x4.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w500/v85FlkbMYKa5du1glm0YfYNsL2n.jpg",
+    "images": [
+      "https://image.tmdb.org/t/p/w500/sSkEkCxsEs9LuHZzA2IZYyvd9x4.jpg",
+      "https://image.tmdb.org/t/p/w500/s9lvJIb60u0ckxiWG64s2DTHlp3.jpg",
+      "https://image.tmdb.org/t/p/w500/o2vGRZvkd1D4wnKy0Io7j08J0tr.jpg",
+      "https://image.tmdb.org/t/p/w500/vfS10F7cJb1mMNbD6dbY7CYHCVl.jpg",
+      "https://image.tmdb.org/t/p/w500/h75XiaeEAVnvUmwdiNFufqc2ECR.jpg",
+      "https://image.tmdb.org/t/p/w500/iy9JixZNaPlHQTZvLLVCui7kgcj.jpg",
+      "https://image.tmdb.org/t/p/w500/8Xisot6gaIxyvpAAVpvRTZIYeC1.jpg",
+      "https://image.tmdb.org/t/p/w500/hVpDKCA4UFIWhhCShDvMKShcoyl.jpg",
+      "https://image.tmdb.org/t/p/w500/eexnDxsMFY4AWdxNY9TYVuJrMua.jpg",
+      "https://image.tmdb.org/t/p/w500/s19l47Y3ZXxyHiwVGolMWxg88tP.jpg",
+      "https://image.tmdb.org/t/p/w500/Ac1USiYBQ5U3RWUKQjB1PyNeQb2.jpg",
+      "https://image.tmdb.org/t/p/w500/oHgujclve5UrllCkv5xkPBP1adu.jpg"
+    ],
+    "director": [
+      "Siân Heder"
+    ],
+    "cast": [
+      {
+        "name": "Emilia Jones",
+        "character": "Ruby Rossi"
+      },
+      {
+        "name": "Marlee Matlin",
+        "character": "Jackie Rossi"
+      },
+      {
+        "name": "Troy Kotsur",
+        "character": "Frank Rossi"
+      },
+      {
+        "name": "Eugenio Derbez",
+        "character": "Bernardo Villalobos"
+      },
+      {
+        "name": "Ferdia Walsh-Peelo",
+        "character": "Miles"
+      },
+      {
+        "name": "Daniel Durant",
+        "character": "Leo Rossi"
+      },
+      {
+        "name": "Amy Forsyth",
+        "character": "Gertie"
+      },
+      {
+        "name": "Kevin Chapman",
+        "character": "Brady"
+      },
+      {
+        "name": "John Fiore",
+        "character": "Tony Salgado"
+      },
+      {
+        "name": "Lonnie Farmer",
+        "character": "Arthur"
+      },
+      {
+        "name": "Courtland Jones",
+        "character": "Ms. Simon"
+      },
+      {
+        "name": "Molly Beth Thomas",
+        "character": "Audra"
+      },
+      {
+        "name": "Ayana Brown",
+        "character": "Guidance Counselor"
+      },
+      {
+        "name": "Jason Pugatch",
+        "character": "Doctor"
+      },
+      {
+        "name": "Kyana Fanene",
+        "character": "Riff Girl"
+      },
+      {
+        "name": "Anilee List",
+        "character": "Adele Girl"
+      },
+      {
+        "name": "Stone Martin",
+        "character": "Harry Potter Boy"
+      },
+      {
+        "name": "Maeve Chapman",
+        "character": "Shaker Girl"
+      },
+      {
+        "name": "Stephen Caliskan",
+        "character": "Tall Boy"
+      },
+      {
+        "name": "Amanda Bradshaw",
+        "character": "Shy Girl"
+      }
+    ],
     "genres": [
       "Drama",
       "Música",
@@ -45,8 +452,11 @@
     ],
     "release_date": "2021-08-11",
     "vote_average": 7.966,
-    "duration": 0,
-    "rate": "NR"
+    "duration": 111,
+    "content_rating": "12",
+    "budget": 10000000,
+    "revenue": 1600000,
+    "tagline": "Cada familia tiene su propia forma de hablar."
   },
   {
     "idTMDB": 601,
@@ -55,6 +465,101 @@
     "overview": "Un pequeño ser de otro planeta se queda abandonado en la Tierra cuando su nave se marcha olvidándose de él. Tiene miedo. Está completamente solo, pero se hará amigo de un niño, que lo esconde en su casa. El niño y sus hermanos intentarán encontrar la forma de que el pequeño extraterrestre regrese a su planeta antes de que los científicos y la policía lo encuentren.",
     "videoUrl": "http://localhost:3435/movies/E.T.  El extraterrestre.mp4",
     "thumbnailUrl": "https://image.tmdb.org/t/p/w500/lVUsjKHXPvLTNpFBABnrPzhx5Dc.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w500/9Kg322bGsEbmp94LjCCVGz3cpNw.jpg",
+    "images": [
+      "https://image.tmdb.org/t/p/w500/lVUsjKHXPvLTNpFBABnrPzhx5Dc.jpg",
+      "https://image.tmdb.org/t/p/w500/ojvKem8WUzRK5PLvO7wTuAFinnz.jpg",
+      "https://image.tmdb.org/t/p/w500/4kixNqJAu7hWpZOnOsznL7YPuuQ.jpg",
+      "https://image.tmdb.org/t/p/w500/5yORrnkemL7rGRIlm8M5OkpdXqP.jpg",
+      "https://image.tmdb.org/t/p/w500/ybx6SJVT5uB8DKHXPokFnUOvgsi.jpg",
+      "https://image.tmdb.org/t/p/w500/fxX4kQlTItBWCgp7mYOq2BLzncg.jpg",
+      "https://image.tmdb.org/t/p/w500/h9EjGFWzfpNW5OG8Nr1r6pMLcHI.jpg"
+    ],
+    "director": [
+      "Steven Spielberg"
+    ],
+    "cast": [
+      {
+        "name": "Henry Thomas",
+        "character": "Elliott"
+      },
+      {
+        "name": "Drew Barrymore",
+        "character": "Gertie"
+      },
+      {
+        "name": "Robert MacNaughton",
+        "character": "Michael"
+      },
+      {
+        "name": "Peter Coyote",
+        "character": "Keys"
+      },
+      {
+        "name": "Dee Wallace",
+        "character": "Mary"
+      },
+      {
+        "name": "Erika Eleniak",
+        "character": "Pretty Girl"
+      },
+      {
+        "name": "K.C. Martel",
+        "character": "Greg"
+      },
+      {
+        "name": "C. Thomas Howell",
+        "character": "Tyler"
+      },
+      {
+        "name": "Sean Frye",
+        "character": "Steve"
+      },
+      {
+        "name": "David M. O'Dell",
+        "character": "Schoolboy"
+      },
+      {
+        "name": "Richard Swingler",
+        "character": "Science Teacher"
+      },
+      {
+        "name": "Frank Toth",
+        "character": "Policeman"
+      },
+      {
+        "name": "Robert Barton",
+        "character": "Ultra Sound Man"
+      },
+      {
+        "name": "Michael Darrell",
+        "character": "Van Man"
+      },
+      {
+        "name": "David Berkson",
+        "character": "Medical Unit"
+      },
+      {
+        "name": "David Carlberg",
+        "character": "Medical Unit"
+      },
+      {
+        "name": "Milt Kogan",
+        "character": "Medical Unit"
+      },
+      {
+        "name": "Alexander Lampone",
+        "character": "Medical Unit"
+      },
+      {
+        "name": "Rhoda Makoff",
+        "character": "Medical Unit"
+      },
+      {
+        "name": "Robert Murphy",
+        "character": "Medical Unit"
+      }
+    ],
     "genres": [
       "Ciencia ficción",
       "Aventura",
@@ -63,8 +568,11 @@
     ],
     "release_date": "1982-06-11",
     "vote_average": 7.512,
-    "duration": 0,
-    "rate": "NR"
+    "duration": 115,
+    "content_rating": "APTA",
+    "budget": 10500000,
+    "revenue": 792965500,
+    "tagline": "Tiene miedo. Está solo. A tres millones de años luz de su casa."
   },
   {
     "idTMDB": 4347,
@@ -73,14 +581,222 @@
     "overview": "En el verano de 1935, Briony Tallis (Saoirse Ronan), una precoz escritora de 13 años, cambia irremediablemente el curso de varias vidas cuando acusa al amante de su hermana Cecilia (Keira Knightley), el joven Robbie Turner (James McAvoy), de haber cometido un crimen. Los productores y el realizador de \"Orgullo y prejuicio\" vuelven a unirse en este drama.",
     "videoUrl": "http://localhost:3435/movies/Expiacion Mas Alla De La Pasion (Spanish DVDRip).mp4",
     "thumbnailUrl": "https://image.tmdb.org/t/p/w500/lGzQYPmmdBZDiIqhhnB7NdZmB2q.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w500/sCDWoyRutBPVHzVGB2nmXE8oxaX.jpg",
+    "images": [
+      "https://image.tmdb.org/t/p/w500/lGzQYPmmdBZDiIqhhnB7NdZmB2q.jpg",
+      "https://image.tmdb.org/t/p/w500/kevM6Yn2lVmvhUKpU7DWFmq2S8R.jpg",
+      "https://image.tmdb.org/t/p/w500/pqrH1vVSf4QLBBOc1Jd3BM6PRhA.jpg"
+    ],
+    "director": [
+      "Joe Wright"
+    ],
+    "cast": [
+      {
+        "name": "James McAvoy",
+        "character": "Robbie Turner"
+      },
+      {
+        "name": "Keira Knightley",
+        "character": "Cecilia Tallis"
+      },
+      {
+        "name": "Saoirse Ronan",
+        "character": "Briony Tallis (Age 13)"
+      },
+      {
+        "name": "Romola Garai",
+        "character": "Briony Tallis (Age 18)"
+      },
+      {
+        "name": "Vanessa Redgrave",
+        "character": "Briony Tallis (Age 77)"
+      },
+      {
+        "name": "Brenda Blethyn",
+        "character": "Grace Turner"
+      },
+      {
+        "name": "Juno Temple",
+        "character": "Lola Quincey"
+      },
+      {
+        "name": "Benedict Cumberbatch",
+        "character": "Paul Marshall"
+      },
+      {
+        "name": "Harriet Walter",
+        "character": "Emily Tallis"
+      },
+      {
+        "name": "Alfie Allen",
+        "character": "Danny Hardman"
+      },
+      {
+        "name": "Jérémie Renier",
+        "character": "Luc Cornet"
+      },
+      {
+        "name": "Anthony Minghella",
+        "character": "Interviewer"
+      },
+      {
+        "name": "Tobias Menzies",
+        "character": "Naval Officer"
+      },
+      {
+        "name": "Peter Wight",
+        "character": "Police Inspector"
+      },
+      {
+        "name": "Gina McKee",
+        "character": "Sister Drummond"
+      },
+      {
+        "name": "Tilly Vosburgh",
+        "character": "Mother of Evacuees"
+      },
+      {
+        "name": "John Normington",
+        "character": "Vicar"
+      },
+      {
+        "name": "Patrick Kennedy",
+        "character": "Leon Tallis"
+      },
+      {
+        "name": "Peter McNeil O'Connor",
+        "character": "Police Sergeant"
+      },
+      {
+        "name": "Daniel Mays",
+        "character": "Tommy Nettle"
+      }
+    ],
     "genres": [
       "Drama",
       "Romance"
     ],
     "release_date": "2007-09-07",
     "vote_average": 7.648,
-    "duration": 0,
-    "rate": "NR"
+    "duration": 123,
+    "content_rating": "12",
+    "budget": 30000000,
+    "revenue": 131016624,
+    "tagline": "Unidos por el amor. Separados por el miedo. Redimidos por la esperanza"
+  },
+  {
+    "idTMDB": 9340,
+    "name": "Goonies",
+    "title": "Los Goonies",
+    "overview": "Mikey, un muchacho de trece años, que junto con su hermano mayor y sus amigos se hacen llamar 'Los Goonies', decide subir a jugar al desván de su casa, donde su padre guarda antigüedades. Allí, el grupo encuentra el mapa de un tesoro.",
+    "videoUrl": "http://localhost:3435/movies/Goonies.mp4",
+    "thumbnailUrl": "https://image.tmdb.org/t/p/w500/h0QoQSodfdd3VTBqlFb2QP7wIbL.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w500/5qsyqA7FeYRymBmNbPBqBgqWPO4.jpg",
+    "images": [
+      "https://image.tmdb.org/t/p/w500/h0QoQSodfdd3VTBqlFb2QP7wIbL.jpg",
+      "https://image.tmdb.org/t/p/w500/v7dWDGqLS0FHsVpSLNeKo9xlkg1.jpg",
+      "https://image.tmdb.org/t/p/w500/aJzSNScsbndYrNdyfdGIiMEf0J6.jpg",
+      "https://image.tmdb.org/t/p/w500/s43MIHkhzn7EKZxNcQsjOI5iX15.jpg",
+      "https://image.tmdb.org/t/p/w500/gbClWAAcWesWoQInUUPtL5w6Vfy.jpg",
+      "https://image.tmdb.org/t/p/w500/6ux3UNP3R1Orze4WDxLYIxGIeE1.jpg"
+    ],
+    "director": [
+      "Richard Donner"
+    ],
+    "cast": [
+      {
+        "name": "Sean Astin",
+        "character": "Mikey Walsh"
+      },
+      {
+        "name": "Josh Brolin",
+        "character": "Brand Walsh"
+      },
+      {
+        "name": "Jeff Cohen",
+        "character": "Lawrence \"Chunk\" Cohen"
+      },
+      {
+        "name": "Corey Feldman",
+        "character": "Clark \"Mouth\" Devereaux"
+      },
+      {
+        "name": "Kerri Green",
+        "character": "Andy Carmichael"
+      },
+      {
+        "name": "Martha Plimpton",
+        "character": "Stephanie \"Stef\" Steinbrenner"
+      },
+      {
+        "name": "Ke Huy Quan",
+        "character": "Richard \"Data\" Wang"
+      },
+      {
+        "name": "John Matuszak",
+        "character": "Sloth"
+      },
+      {
+        "name": "Robert Davi",
+        "character": "Jake Fratelli"
+      },
+      {
+        "name": "Joe Pantoliano",
+        "character": "Francis Fratelli"
+      },
+      {
+        "name": "Anne Ramsey",
+        "character": "Mama Fratelli"
+      },
+      {
+        "name": "Lupe Ontiveros",
+        "character": "Rosalita"
+      },
+      {
+        "name": "Mary Ellen Trainor",
+        "character": "Mrs. Walsh"
+      },
+      {
+        "name": "Keith Walker",
+        "character": "Mr. Walsh"
+      },
+      {
+        "name": "Steve Antin",
+        "character": "Troy"
+      },
+      {
+        "name": "Paul Tuerpe",
+        "character": "Sheriff"
+      },
+      {
+        "name": "George Robotham",
+        "character": "Prison Guard"
+      },
+      {
+        "name": "Charles McDaniel",
+        "character": "Chunk's Father"
+      },
+      {
+        "name": "Elaine Cohen McMahon",
+        "character": "Chunk's Mother"
+      },
+      {
+        "name": "Michael Paul Chan",
+        "character": "Data's Father"
+      }
+    ],
+    "genres": [
+      "Aventura",
+      "Comedia",
+      "Familia"
+    ],
+    "release_date": "1985-06-07",
+    "vote_average": 7.52,
+    "duration": 114,
+    "content_rating": "APTA",
+    "budget": 19000000,
+    "revenue": 61389680,
+    "tagline": "Las cuevas secretas. El viejo faro. El mapa perdido. Las trampas traidoras. El tesoro oculto. ¡Y Sloth!"
   },
   {
     "idTMDB": 117,
@@ -89,6 +805,96 @@
     "overview": "El joven agente del tesoro Elliot Ness llega a Chicago con la determinación de detener a Al Capone. No va a ser tarea fácil, puesto que Capone tiene a la policía en el bolsillo. Ness conoce a Jimmy Malone, un guardia veterano y probablemente el más honrado de todo el cuerpo, al que Ness pide ayuda en su cruzada contra Capone.",
     "videoUrl": "http://localhost:3435/movies/Los Intocables de Eliot Ness.mp4",
     "thumbnailUrl": "https://image.tmdb.org/t/p/w500/pVcWaUbFDL76ObIsReIBQ5ILMHv.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w500/i1oWUGVDNBhGBykcCRBlX326udb.jpg",
+    "images": [
+      "https://image.tmdb.org/t/p/w500/pVcWaUbFDL76ObIsReIBQ5ILMHv.jpg",
+      "https://image.tmdb.org/t/p/w500/gLcSe3B3pbWYxI6Guie9mG7rRKR.jpg"
+    ],
+    "director": [
+      "Brian De Palma"
+    ],
+    "cast": [
+      {
+        "name": "Kevin Costner",
+        "character": "Eliot Ness"
+      },
+      {
+        "name": "Sean Connery",
+        "character": "Jim Malone"
+      },
+      {
+        "name": "Charles Martin Smith",
+        "character": "Oscar Wallace"
+      },
+      {
+        "name": "Andy García",
+        "character": "George Stone"
+      },
+      {
+        "name": "Robert De Niro",
+        "character": "Al Capone"
+      },
+      {
+        "name": "Richard Bradford",
+        "character": "Mike"
+      },
+      {
+        "name": "Jack Kehoe",
+        "character": "Payne"
+      },
+      {
+        "name": "Brad Sullivan",
+        "character": "George"
+      },
+      {
+        "name": "Billy Drago",
+        "character": "Nitti"
+      },
+      {
+        "name": "Patricia Clarkson",
+        "character": "Ness' Wife"
+      },
+      {
+        "name": "Vito D'Ambrosio",
+        "character": "Bowtie Driver"
+      },
+      {
+        "name": "Steven Goldstein",
+        "character": "Scoop"
+      },
+      {
+        "name": "Peter Aylward",
+        "character": "Lt. Anderson"
+      },
+      {
+        "name": "Don Harvey",
+        "character": "Preseuski"
+      },
+      {
+        "name": "Robert Swan",
+        "character": "Mountie Captain"
+      },
+      {
+        "name": "John J. Walsh",
+        "character": "Bartender"
+      },
+      {
+        "name": "Del Close",
+        "character": "Alderman"
+      },
+      {
+        "name": "Colleen Bade",
+        "character": "Mrs. Blackmer"
+      },
+      {
+        "name": "Greg Noonan",
+        "character": "Rangemaster"
+      },
+      {
+        "name": "Sean Grennan",
+        "character": "Cop Cousin"
+      }
+    ],
     "genres": [
       "Crimen",
       "Drama",
@@ -97,8 +903,11 @@
     ],
     "release_date": "1987-06-03",
     "vote_average": 7.768,
-    "duration": 0,
-    "rate": "NR"
+    "duration": 119,
+    "content_rating": "18",
+    "budget": 25000000,
+    "revenue": 76270454,
+    "tagline": "¿Qué estás preparado para hacer?"
   },
   {
     "idTMDB": 773,
@@ -107,13 +916,109 @@
     "overview": "Los Hoover son una familia conflictiva: el abuelo esnifa cocaína y suelta palabrotas, el padre da cursos sobre el éxito con estrepitoso fracaso, la madre no da abasto, el tío se recupera de un suicidio frustrado al ser abandonado por su novio, el hijo adolescente lee a Nietzsche y se niega a hablar, y la hija pequeña, Olive, gafotas y ligeramente gordinflona, quiere ser una belleza. Cuando un golpe de suerte lleva a Olive a ser invitada a participar en el muy competitivo concurso de 'Pequeña Miss Sunshine' en California, toda la familia Hoover se reúne para ir con ella. Se apilan en su oxidada furgoneta Volkswagen y se dirigen hacia el Oeste en un trágicómico periplo de tres días lleno de locas sorpresas que les lleva al gran debut de Olive, el cual cambiará a esta familia de inadaptados de una forma que nunca hubieran imaginado.",
     "videoUrl": "http://localhost:3435/movies/Pequeña.Miss.Sunshine.mp4",
     "thumbnailUrl": "https://image.tmdb.org/t/p/w500/vGuIFlvqX6R3zvR4c05uId6fj5i.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w500/4YzGG8IPduUQRVnQ0vN5laHA1rH.jpg",
+    "images": [
+      "https://image.tmdb.org/t/p/w500/vGuIFlvqX6R3zvR4c05uId6fj5i.jpg",
+      "https://image.tmdb.org/t/p/w500/1kmEuQlEHTxLIdt4CF6K9vmpET9.jpg",
+      "https://image.tmdb.org/t/p/w500/AwckhKURm6HZ50SSBzu7iVkk7kv.jpg",
+      "https://image.tmdb.org/t/p/w500/qE2ii6o1ndrhpI5ZYpxStvF5sKN.jpg"
+    ],
+    "director": [
+      "Jonathan Dayton",
+      "Valerie Faris"
+    ],
+    "cast": [
+      {
+        "name": "Greg Kinnear",
+        "character": "Richard Hoover"
+      },
+      {
+        "name": "Toni Collette",
+        "character": "Sheryl Hoover"
+      },
+      {
+        "name": "Steve Carell",
+        "character": "Frank Ginsberg"
+      },
+      {
+        "name": "Paul Dano",
+        "character": "Dwayne Hoover"
+      },
+      {
+        "name": "Abigail Breslin",
+        "character": "Olive Hoover"
+      },
+      {
+        "name": "Alan Arkin",
+        "character": "Edwin Hoover"
+      },
+      {
+        "name": "Bryan Cranston",
+        "character": "Stan Grossman"
+      },
+      {
+        "name": "Beth Grant",
+        "character": "Nancy Jenkins"
+      },
+      {
+        "name": "Wallace Langham",
+        "character": "Kirby"
+      },
+      {
+        "name": "Matt Winston",
+        "character": "Pageant MC"
+      },
+      {
+        "name": "Julio Oscar Mechoso",
+        "character": "Mechanic"
+      },
+      {
+        "name": "Marc Turtletaub",
+        "character": "Doctor #1"
+      },
+      {
+        "name": "Jill Talley",
+        "character": "Cindy"
+      },
+      {
+        "name": "Brenda Canela",
+        "character": "Diner Waitress"
+      },
+      {
+        "name": "Chuck Loring",
+        "character": "Convience Store Proprietor"
+      },
+      {
+        "name": "Justin Shilton",
+        "character": "Josh"
+      },
+      {
+        "name": "Gordon Thomson",
+        "character": "Larry Sugarman"
+      },
+      {
+        "name": "Steven Christopher Parker",
+        "character": "Teen Boy #1"
+      },
+      {
+        "name": "John Walcutt",
+        "character": "Doctor #2"
+      },
+      {
+        "name": "Paula Newsome",
+        "character": "Linda"
+      }
+    ],
     "genres": [
       "Comedia",
       "Drama"
     ],
     "release_date": "2006-07-26",
     "vote_average": 7.678,
-    "duration": 0,
-    "rate": "NR"
+    "duration": 101,
+    "content_rating": "6",
+    "budget": 8000000,
+    "revenue": 100523181,
+    "tagline": "Bienvenidos al infierno"
   }
 ]
