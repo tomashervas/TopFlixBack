@@ -13,7 +13,7 @@ async function getMovieData(name, movies) {
         const existingMovie = movies.find(m => m.name === name);
         if (existingMovie) return
     }
-    const res = await axios.get(`https://api.themoviedb.org/3/search/multi?api_key=${process.env.TMDB_API_KEY}&language=es&query=${name}`);
+    const res = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.TMDB_API_KEY}&language=es&query=${name}`);
     const movie = res.data.results[0];
     if (!movie) return
     const movieData = await axios.get(`https://api.themoviedb.org/3/movie/${movie.id}?api_key=${process.env.TMDB_API_KEY}&language=es&append_to_response=images,videos,release_dates,credits`);
@@ -33,10 +33,22 @@ function getRating(movie) {
         }
         if (rating) break
     }
+
+    if (rating === 'TP' || rating === 'G' || rating === 'T' ) rating = 0
+    else if (rating === 'PG' ) rating = 7
+    else if (rating === 'PG-13' ) rating = 13
+    else if (rating === 'R' ) rating = 16
+    else if (rating === 'NC-17' ) rating = 18
+    else rating = Number(rating)
+
+    if(rating === 'NaN') rating = 18
+    if(rating === 'null') rating = 18
+    if(!rating) rating = 18
+
     console.log("rating", rating)
     return rating
 }
-const directorioPeliculas = '/home/tomas/peliculas';
+const directorioPeliculas = '/mnt/disconas/peliculas';
 
 async function listarPeliculas(directorio) {
 

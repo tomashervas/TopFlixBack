@@ -1,6 +1,6 @@
 const path = require('path');
 
-const moviesFolder = '/home/tomas/peliculas';
+const moviesFolder = '/mnt/disconas/peliculas';
 
 const getVideo = (req, res) => {
   const movie = req.params.movie;

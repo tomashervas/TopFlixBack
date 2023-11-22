@@ -8,7 +8,7 @@ dotenv.config();
 const directorioSeries = '/home/tomas/series';
 let tvshow = {}
 
-async function getTvShowData(name, tvshows,) {
+async function getTvShowData(name, tvshows, id) {
     if (tvshows.length !== 0) {
         const existingShow = tvshows.find(m => m.name === name);
         if (existingShow) {
@@ -16,11 +16,16 @@ async function getTvShowData(name, tvshows,) {
             return
         }
     }
-    const res = await axios.get(`https://api.themoviedb.org/3/search/tv?api_key=${process.env.TMDB_API_KEY}&language=es&query=${name}`);
-    const tvshowRes = res.data.results[0];
+    let idTV
+    if (id) idTV = id
+    else {
+        const res = await axios.get(`https://api.themoviedb.org/3/search/tv?api_key=${process.env.TMDB_API_KEY}&language=es&query=${name}`);
+        const tvshowRes = res.data.results[0];
+        idTV = tvshowRes.id
+    }
     console.log('peticion')
-    if (!tvshowRes) return
-    const { data } = await axios.get(`https://api.themoviedb.org/3/tv/${tvshowRes.id}?api_key=${process.env.TMDB_API_KEY}&language=es&append_to_response=images,videos,content_ratings`);
+    if (!idTV) return
+    const { data } = await axios.get(`https://api.themoviedb.org/3/tv/${idTV}?api_key=${process.env.TMDB_API_KEY}&language=es&append_to_response=images,videos,content_ratings`);
     const tvshowData = data
     const seasons_details = await Promise.all(tvshowData.seasons.map(async (season) => {
         const { data } = await axios.get(`https://api.themoviedb.org/3/tv/${tvshowRes.id}/season/${season.season_number}?api_key=${process.env.TMDB_API_KEY}&language=es&region=ES`)
@@ -56,7 +61,21 @@ function getRating(tv) {
     for (const iso of isoCodes) {
         const content = tv.content_ratings.results.find(item => item.iso_3166_1 === iso);
         if (!content) continue
-        return content.rating
+        let rating = content.rating
+
+        if (rating === 'TP' || rating === 'G' || rating === 'T') rating = 0
+        else if (rating === 'PG') rating = 7
+        else if (rating === 'PG-13') rating = 13
+        else if (rating === 'R') rating = 16
+        else if (rating === 'NC-17') rating = 18
+        else rating = Number(rating)
+
+        if (rating === 'NaN') rating = 18
+        if(rating === 'null') rating = 18
+        if(!rating) rating = 18
+
+        console.log("rating", rating)
+        return rating
     }
 }
 
@@ -65,6 +84,7 @@ async function listarElementos(directorio) {
         const elementos = await fs.readdir(directorio);
 
         for (const elemento of elementos) {
+            if(elemento[0]==='_') continue
             const elementoRuta = path.join(directorio, elemento);
             const stats = await fs.stat(elementoRuta);
 
@@ -73,7 +93,9 @@ async function listarElementos(directorio) {
                     await listarElementos(elementoRuta);
                     continue
                 }
-                const tv = await getTvShowData(elemento, tvshows);
+                let elementoId = elemento.includes('_') && elemento.split('_')[1]
+
+                const tv = await getTvShowData(elemento, tvshows, elementoId);
                 if (!tv) {
                     await listarElementos(elementoRuta);
                     continue
@@ -100,29 +122,52 @@ async function listarElementos(directorio) {
                     seasons: tv.seasons_details
                 }
                 console.log('directory: ', tvshow.nameShow)
-                //console.log(tvshow);
-                //console.log(tvshow.seasons[0].episodes[0])
-                // Llama de manera recursiva a la función para procesar el subdirectorio.
+                //store in db
+                const res = await axios.post('http://localhost:3000/api/tvshows', tvshow);
+
                 tvshows.push(tvshow)
                 await new Promise((resolve) => setTimeout(resolve, 500));
+                // Llama de manera recursiva a la función para procesar el subdirectorio.
                 await listarElementos(elementoRuta);
             } else {
                 const regex = /(\d+)x(\d+)/;
                 const match = regex.exec(elemento);
-                if (!match) continue
+                //console.log('ruta:', elemento, directorio)
+                const regexUrl = /\/series\/(.+)$/
+                const matchUrl = directorio.match(regexUrl)
+                // console.log('matchUrl:', matchUrl)
+
+                if (!match || !matchUrl) continue
+                const matchUrlStr = matchUrl[1]
                 const [_, season, episode] = match
-                const vUrl = process.env.BASE_URL_TV + elemento
+                const vUrl = process.env.BASE_URL_TV + matchUrlStr + '/' + elemento
 
-                tvshows.find(s => s.idTMDB === tvshow.idTMDB).seasons.find(s => s.season_number === +season).episodes.find(e => e.episode_number === +episode).videoUrl = vUrl
-                console.log(elemento + ' -> actualizado');
+                const ep = tvshows.find(s => s.idTMDB === tvshow.idTMDB).seasons.find(s => s.season_number === +season).episodes.find(e => e.episode_number === +episode)
+                if(!ep) {
+                    const res = await axios.put(`http://localhost:3000/api/tvshows/${tvshow.idTMDB}/seasons/${season}/`, {
+                        id_episode: +episode,
+                        season_number: +season,
+                        episode_number: +episode,
+                        videoUrl: vUrl,
+                        still_path: tvshow.backdropUrl ? process.env.BASE_IMG_TMDB + tvshow.backdropUrl : process.env.BASE_IMG_TMDB + tvshow.thumbnailUrl,
+                        name: 'Episodio ' + episode,
+                        overview: '',
+                        show_id: tvshow.idTMDB,
+                        runtime: tvshow.duration
+                    });
+                    console.log(res.status)
+                    console.log(elemento + ' -> insertado');
+                }
+                else if (!ep.videoUrl) {
+                    ep.videoUrl = vUrl
+                    const res = await axios.put(`http://localhost:3000/api/tvshows/${tvshow.idTMDB}`, ep);
+                    console.log(res.status)
+                    console.log(elemento + ' -> actualizado');
+                } else console.log('ya estaba el epdisodio ' + episode + ' de la temporada ' + season)
 
-                // tvshow.seasons.find(s => s.season_number === +season).episodes.find(e => e.episode_number === +episode).videoUrl = vUrl
-
-                // console.log(elemento, tvshow.seasons.find(s => s.season_number === +season).episodes.find(e => e.episode_number === +episode));
             }
 
         }
-        //Store in the DB
 
     } catch (error) {
         console.error('Error', error);
@@ -130,9 +175,10 @@ async function listarElementos(directorio) {
 }
 
 listarElementos(directorioSeries).then(() => {
+
     fs.writeFile('./tv.json', JSON.stringify(tvshows, null, 2)).then(() => {
         console.log('Archivo actualizado con éxito');
-    
+
     }).catch((error) => {
         console.error('Error al escribir el archivo:', error);
     })
