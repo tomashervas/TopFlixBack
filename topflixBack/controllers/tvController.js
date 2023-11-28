@@ -1,6 +1,6 @@
 const path = require('path');
 
-const tvsFolder = '/home/tomas/series';
+const tvsFolder = '/mnt/HDD1TB/series';
 
 const getTv = (req, res) => {
   const serie = req.params.serie;

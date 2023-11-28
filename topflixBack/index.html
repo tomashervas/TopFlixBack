@@ -12,7 +12,7 @@
 
     <script>
         const videoPlayer = document.getElementById('videoPlayer');
-        const videoUrl = 'http://192.168.0.19:3435/movies/Campeones s01e001 [Chute_Hacia_El_Gran_Cielo].mp4';
+        const videoUrl = 'https://192.168.0.221:3435/movies/65.mp4';
         videoPlayer.src = videoUrl;
         const storageKey = 'videoLastPosition';
         const storedPosition = localStorage.getItem(storageKey);
@@ -38,7 +38,7 @@
 
 
         videoPlayer.load();
-        videoPlayer.play();
+        // videoPlayer.play();
     </script>
 </body>
 

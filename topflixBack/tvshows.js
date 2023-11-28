@@ -5,7 +5,7 @@ const dotenv = require('dotenv');
 const tvshows = require('./tv.json');
 dotenv.config();
 
-const directorioSeries = '/home/tomas/series';
+const directorioSeries = '/mnt/disconas/series';
 let tvshow = {}
 
 async function getTvShowData(name, tvshows, id) {
@@ -23,12 +23,11 @@ async function getTvShowData(name, tvshows, id) {
         const tvshowRes = res.data.results[0];
         idTV = tvshowRes.id
     }
-    console.log('peticion')
     if (!idTV) return
     const { data } = await axios.get(`https://api.themoviedb.org/3/tv/${idTV}?api_key=${process.env.TMDB_API_KEY}&language=es&append_to_response=images,videos,content_ratings`);
     const tvshowData = data
     const seasons_details = await Promise.all(tvshowData.seasons.map(async (season) => {
-        const { data } = await axios.get(`https://api.themoviedb.org/3/tv/${tvshowRes.id}/season/${season.season_number}?api_key=${process.env.TMDB_API_KEY}&language=es&region=ES`)
+        const { data } = await axios.get(`https://api.themoviedb.org/3/tv/${idTV}/season/${season.season_number}?api_key=${process.env.TMDB_API_KEY}&language=es&region=ES`)
         const seasonToStore = {
             season_number: season.season_number,
             id_season: season.id,

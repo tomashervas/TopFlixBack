@@ -13,10 +13,16 @@ async function getMovieData(name, movies) {
         const existingMovie = movies.find(m => m.name === name);
         if (existingMovie) return
     }
-    const res = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.TMDB_API_KEY}&language=es&query=${name}`);
-    const movie = res.data.results[0];
-    if (!movie) return
-    const movieData = await axios.get(`https://api.themoviedb.org/3/movie/${movie.id}?api_key=${process.env.TMDB_API_KEY}&language=es&append_to_response=images,videos,release_dates,credits`);
+
+    console.log(name)
+    let nameId = name.includes('_') && name.split('_')[1]
+    if (!nameId) {
+        const res = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.TMDB_API_KEY}&language=es&query=${name}`);
+        nameId = res.data.results[0].id;
+        if (!nameId) return
+    }
+
+    const movieData = await axios.get(`https://api.themoviedb.org/3/movie/${nameId}?api_key=${process.env.TMDB_API_KEY}&language=es&append_to_response=images,videos,release_dates,credits`);
     //console.log("Datos de TMDB", movieData.data.release_dates.results[0].release_dates)
     return movieData.data
 }

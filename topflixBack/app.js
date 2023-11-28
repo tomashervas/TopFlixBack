@@ -1,4 +1,6 @@
 const express = require('express');
+const https = require('https');
+const fs = require('fs');
 const cors = require('cors');
 const morgan = require('morgan');
 const movieRoutes = require('./routes/movieRoutes');
@@ -14,6 +16,13 @@ app.use(morgan('dev'));
 app.use('/tv', tvRoutes);
 app.use('/movies', movieRoutes);
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+const options = {
+  key: fs.readFileSync('key.pem'),
+  cert: fs.readFileSync('cert.pem'),
+};
+
+const server = https.createServer(options, app);
+
+server.listen(PORT, () => {
+  console.log(`Servidor HTTPS corriendo en el puerto ${PORT}`);
 });
