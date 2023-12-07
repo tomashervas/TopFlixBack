@@ -1,6 +1,6 @@
 const path = require('path');
 
-const tvsFolder = '/mnt/HDD1TB/series';
+const tvsFolder = '/mnt/disconas/series';
 
 const getTv = (req, res) => {
   const serie = req.params.serie;
@@ -17,4 +17,4 @@ const getTv = (req, res) => {
 
 module.exports = {
   getTv
-};
+}; 

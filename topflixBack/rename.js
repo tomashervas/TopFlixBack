@@ -3,6 +3,7 @@ const fs = require('fs').promises;
 const axios = require('axios');
 const dotenv = require('dotenv');
 const movies = require('./movies.json');
+const generateToken = require('./lib/jwt');
 // const moviesGenres = require('./genres_movies_es.json');
 
 dotenv.config();
@@ -110,7 +111,13 @@ async function listarPeliculas(directorio) {
             movies.push(movieDB)
         }
 
-        const res = await axios.post('http://localhost:3000/api/seedmovies', movies);
+        const token = generateToken(process.env.ADMIN);
+
+        const res = await axios.post('http://localhost:3000/api/seedmovies', movies, {
+            headers: {
+                'Authorization': `Bearer ${token}`
+            }
+        });
         console.log(res)
 
         console.log('despues: ', movies.length)

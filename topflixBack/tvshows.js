@@ -3,10 +3,14 @@ const path = require('path');
 const axios = require('axios');
 const dotenv = require('dotenv');
 const tvshows = require('./tv.json');
+const generateToken = require('./lib/jwt');
 dotenv.config();
 
 const directorioSeries = '/mnt/disconas/series';
 let tvshow = {}
+
+const token = generateToken(process.env.ADMIN);
+
 
 async function getTvShowData(name, tvshows, id) {
     if (tvshows.length !== 0) {
@@ -122,7 +126,11 @@ async function listarElementos(directorio) {
                 }
                 console.log('directory: ', tvshow.nameShow)
                 //store in db
-                const res = await axios.post('http://localhost:3000/api/tvshows', tvshow);
+                const res = await axios.post('http://localhost:3000/api/tvshows', tvshow, {
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    }
+                });
 
                 tvshows.push(tvshow)
                 await new Promise((resolve) => setTimeout(resolve, 500));
@@ -143,7 +151,7 @@ async function listarElementos(directorio) {
 
                 const ep = tvshows.find(s => s.idTMDB === tvshow.idTMDB).seasons.find(s => s.season_number === +season).episodes.find(e => e.episode_number === +episode)
                 if(!ep) {
-                    const res = await axios.put(`http://localhost:3000/api/tvshows/${tvshow.idTMDB}/seasons/${season}/`, {
+                    const episode = {
                         id_episode: +episode,
                         season_number: +season,
                         episode_number: +episode,
@@ -153,14 +161,22 @@ async function listarElementos(directorio) {
                         overview: '',
                         show_id: tvshow.idTMDB,
                         runtime: tvshow.duration
+                    }
+                    const res = await axios.put(`http://localhost:3000/api/tvshows/${tvshow.idTMDB}/seasons/${season}/`, episode,{
+                        headers: {
+                            'Authorization': `Bearer ${token}`
+                        }
                     });
-                    console.log(res.status)
+                    tvshows.find(s => s.idTMDB === tvshow.idTMDB).seasons.find(s => s.season_number === +season).episodes.push(episode)
                     console.log(elemento + ' -> insertado');
                 }
                 else if (!ep.videoUrl) {
                     ep.videoUrl = vUrl
-                    const res = await axios.put(`http://localhost:3000/api/tvshows/${tvshow.idTMDB}`, ep);
-                    console.log(res.status)
+                    const res = await axios.put(`http://localhost:3000/api/tvshows/${tvshow.idTMDB}`, ep, {
+                        headers: {
+                            'Authorization': `Bearer ${token}`
+                        }
+                    });
                     console.log(elemento + ' -> actualizado');
                 } else console.log('ya estaba el epdisodio ' + episode + ' de la temporada ' + season)
 
