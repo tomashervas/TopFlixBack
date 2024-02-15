@@ -126,7 +126,7 @@ async function listarElementos(directorio) {
                 }
                 console.log('directory: ', tvshow.nameShow)
                 //store in db
-                const res = await axios.post('http://localhost:3000/api/tvshows', tvshow, {
+                const res = await axios.post(`${process.env.DOMAIN_SEED}/api/tvshows`, tvshow, {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }
@@ -162,7 +162,7 @@ async function listarElementos(directorio) {
                         show_id: tvshow.idTMDB,
                         runtime: tvshow.duration
                     }
-                    const res = await axios.put(`http://localhost:3000/api/tvshows/${tvshow.idTMDB}/seasons/${season}/`, episode,{
+                    const res = await axios.put(`${process.env.DOMAIN_SEED}/api/tvshows/${tvshow.idTMDB}/seasons/${season}/`, episode,{
                         headers: {
                             'Authorization': `Bearer ${token}`
                         }
@@ -172,7 +172,7 @@ async function listarElementos(directorio) {
                 }
                 else if (!ep.videoUrl) {
                     ep.videoUrl = vUrl
-                    const res = await axios.put(`http://localhost:3000/api/tvshows/${tvshow.idTMDB}`, ep, {
+                    const res = await axios.put(`${process.env.DOMAIN_SEED}/api/tvshows/${tvshow.idTMDB}`, ep, {
                         headers: {
                             'Authorization': `Bearer ${token}`
                         }

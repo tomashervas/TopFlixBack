@@ -108,17 +108,18 @@ async function listarPeliculas(directorio) {
                 tagline: movie.tagline,
                 trailer: movie.videos.results[0] ? process.env.BASE_URL_VIDEO_YOUTUBE_A + movie.videos.results[0].key + process.env.BASE_URL_VIDEO_YOUTUBE_B : null
             }
-            movies.push(movieDB)
+            
+            const token = generateToken(process.env.ADMIN);
+    
+            const res = await axios.post(`${process.env.DOMAIN_SEED}/api/seedmovie`, movieDB, {
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                }
+            });
+            if (res.status === 201) movies.push(movieDB)
+            console.log("Guardado en DB: " + res.data.name  + " id: " + res.id)
         }
 
-        const token = generateToken(process.env.ADMIN);
-
-        const res = await axios.post(`${process.env.DOMAIN_SEED}/api/seedmovie`, movies, {
-            headers: {
-                'Authorization': `Bearer ${token}`
-            }
-        });
-        console.log(res)
 
         console.log('despues: ', movies.length)
         fs.writeFile('./movies.json', JSON.stringify(movies, null, 2)).then(() => {
