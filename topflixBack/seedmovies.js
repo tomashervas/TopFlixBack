@@ -7,7 +7,6 @@ const generateToken = require('./lib/jwt');
 // const moviesGenres = require('./genres_movies_es.json');
 
 dotenv.config();
-console.log('antes: ', movies.length)
 
 async function getMovieData(name, movies) {
     if (movies.length !== 0) {
@@ -27,7 +26,6 @@ async function getMovieData(name, movies) {
     //console.log("Datos de TMDB", movieData.data.release_dates.results[0].release_dates)
     return movieData.data
 }
-
 function getRating(movie) {
     const isoCodes = ["ES", "DE", "FR", "GB", "US"];
     let rating = 18;
@@ -55,7 +53,6 @@ function getRating(movie) {
     console.log("rating", rating)
     return rating
 }
-const directorioPeliculas = '/mnt/disconas/peliculas';
 
 async function listarPeliculas(directorio) {
 
@@ -133,5 +130,13 @@ async function listarPeliculas(directorio) {
     }
 }
 
-listarPeliculas(directorioPeliculas);
 
+if (require.main === module) {   
+    console.log('antes: ', movies.length)
+    const directorioPeliculas = '/mnt/disconas/peliculas';
+    listarPeliculas(directorioPeliculas);
+}
+
+module.exports = {
+    getRating 
+}
