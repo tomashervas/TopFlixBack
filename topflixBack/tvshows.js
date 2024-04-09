@@ -6,7 +6,7 @@ const tvshows = require('./tv.json');
 const generateToken = require('./lib/jwt');
 dotenv.config();
 
-const directorioSeries = '/mnt/disconas/series';
+const directorioSeries = '/mnt/wd15/series';
 let tvshow = {}
 
 const token = generateToken(process.env.ADMIN);
@@ -24,10 +24,11 @@ async function getTvShowData(name, tvshows, id) {
     if (id) idTV = id
     else {
         const res = await axios.get(`https://api.themoviedb.org/3/search/tv?api_key=${process.env.TMDB_API_KEY}&language=es&query=${name}`);
+        if (!res.data.results[0]) return console.log("No se encontro la serie " + name + ", comprueba en postman que exista")
         const tvshowRes = res.data.results[0];
         idTV = tvshowRes.id
     }
-    if (!idTV) return
+    //if (!idTV) return
     const { data } = await axios.get(`https://api.themoviedb.org/3/tv/${idTV}?api_key=${process.env.TMDB_API_KEY}&language=es&append_to_response=images,videos,content_ratings`);
     const tvshowData = data
     const seasons_details = await Promise.all(tvshowData.seasons.map(async (season) => {
@@ -83,10 +84,12 @@ function getRating(tv) {
 }
 
 async function listarElementos(directorio) {
+    let el;
     try {
         const elementos = await fs.readdir(directorio);
 
         for (const elemento of elementos) {
+            el = elemento
             if(elemento[0]==='_') continue
             const elementoRuta = path.join(directorio, elemento);
             const stats = await fs.stat(elementoRuta);
@@ -178,7 +181,7 @@ async function listarElementos(directorio) {
                         }
                     });
                     console.log(elemento + ' -> actualizado');
-                } else console.log('ya estaba el epdisodio ' + episode + ' de la temporada ' + season)
+                } //else console.log('ya estaba el epdisodio ' + episode + ' de la temporada ' + season)
 
             }
 
@@ -186,6 +189,7 @@ async function listarElementos(directorio) {
 
     } catch (error) {
         console.error('Error', error);
+        console.log('Error en ' + directorio + ' ' + el);
     }
 }
 

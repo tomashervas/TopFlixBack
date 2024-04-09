@@ -117,7 +117,7 @@ async function listarPeliculas(directorio) {
                 }
             });
             if (res.status === 201) movies.push(movieDB)
-            console.log("Guardado en DB: " + res.data.name  + " id: " + res.id)
+            console.log("Guardado en DB: " + res.data.name  + " id: " + res.data.id)
         }
 
 
