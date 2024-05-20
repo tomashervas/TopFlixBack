@@ -165,7 +165,7 @@ async function listarElementos(directorio) {
                         show_id: tvshow.idTMDB,
                         runtime: tvshow.duration
                     }
-                    const res = await axios.put(`${process.env.DOMAIN_SEED}/api/tvshows/${tvshow.idTMDB}/seasons/${season}/`, episode,{
+                    const res = await axios.patch(`${process.env.DOMAIN_SEED}/api/tvshows/${tvshow.idTMDB}/seasons/${season}/`, episode,{
                         headers: {
                             'Authorization': `Bearer ${token}`
                         }
@@ -175,7 +175,7 @@ async function listarElementos(directorio) {
                 }
                 else if (!ep.videoUrl) {
                     ep.videoUrl = vUrl
-                    const res = await axios.put(`${process.env.DOMAIN_SEED}/api/tvshows/${tvshow.idTMDB}`, ep, {
+                    const res = await axios.patch(`${process.env.DOMAIN_SEED}/api/tvshows/${tvshow.idTMDB}`, ep, {
                         headers: {
                             'Authorization': `Bearer ${token}`
                         }
